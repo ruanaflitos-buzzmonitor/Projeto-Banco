@@ -1,0 +1,13 @@
+bin/
+deploy/
+apache-tomcat-*-windows-x64/
+
+*.class
+*.log
+*.tmp
+
+.classpath
+.project
+.settings/
+
+CLINICA_DB_*

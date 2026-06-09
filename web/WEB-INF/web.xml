@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <display-name>Clinica Medica</display-name>
+
+    <!--
+        IMPORTANTE: os Servlets já se registram sozinhos pela anotação
+        @WebServlet("/pacientes"), @WebServlet("/agendamentos"), @WebServlet("/dashboard").
+
+        Por isso NÃO declaramos <servlet>/<servlet-mapping> aqui.
+        Se você declarar os mesmos url-patterns no web.xml E nas anotações,
+        o Tomcat acusa mapeamento duplicado e a aplicação NÃO sobe.
+        (Era o que aconteceria seguindo o web.xml do guia ao pé da letra.)
+
+        Deixe metadata-complete fora (ou = "false") para o Tomcat ler as anotações.
+    -->
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>
